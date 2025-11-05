@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pembayaran | DeliCreme</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="left"><h1 class="logo">DeliCreme</h1></div>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="payment-page">
+    <h2>Pilih Kaedah Pembayaran</h2>
+
+    <div class="payment-grid">
+      <div class="payment-card">
+        <img src="tng.png" alt="TnG">
+        <h3>Touch 'n Go eWallet</h3>
+        <button class="btn pay-method" data-method="TnG">Bayar dengan TnG</button>
+      </div>
+
+      <div class="payment-card">
+        <img src="mybank.png" alt="Maybank">
+        <h3>Maybank</h3>
+        <button class="btn pay-method" data-method="Maybank">Pilih Maybank</button>
+      </div>
+
+      <div class="payment-card">
+        <img src="cimb.png" alt="CIMB">
+        <h3>CIMB</h3>
+        <button class="btn pay-method" data-method="CIMB">Pilih CIMB</button>
+      </div>
+
+      <div class="payment-card">
+        <img src="QR_code_for_mobile_English_Wikipedia.svg" alt="WhatsApp">
+        <h3>qr</h3>
+        <button class="btn" id="payViaWhats">tekan untuk mendapatkan qr</button>
+      </div>
+    </div>
+
+    <div id="payConfirm" class="pay-confirm"></div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year4"></span> DeliCreme</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

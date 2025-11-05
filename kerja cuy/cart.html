@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Troli Anda - DeliCreme</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="left"><h1 class="logo">DeliCreme</h1></div>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="btn">Login</a>
+    </nav>
+  </header>
+
+  <main class="cart-page">
+    <h2>Troli Anda</h2>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div id="cartTotal" class="cart-total">Jumlah: RM0.00</div>
+      <div class="cart-actions">
+        <button id="whatsappPay" class="btn">Bayar melalui WhatsApp</button>
+        <button id="onlinePay" class="btn outline">Bayar Online Banking</button>
+      </div>
+    </div>
+
+    <div id="thank" class="thank-msg" aria-hidden="true">Terima kasih! Pesanan anda telah dihantar 💛</div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year3"></span> DeliCreme</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+/* ==== Global ==== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffaf4;
+  color: #222;
+}
+
+/* ==== Header ==== */
+header {
+  background: linear-gradient(90deg, #ff7b00, #ff7e06);
+  color: white;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a.active, nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==== Contact Card ==== */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  max-width: 600px;
+  width: 100%;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.contact-card h2 {
+  color: #ff8800;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* ==== Form ==== */
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #ff8800;
+  box-shadow: 0 0 5px rgba(255,136,0,0.5);
+}
+
+form button {
+  background-color: #ff8800;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #ff6600;
+}
+
+/* ==== Contact Buttons ==== */
+.contact-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-whatsapp, .btn-bank {
+  background: black;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.btn-whatsapp:hover {
+  background: #25d366;
+}
+
+.btn-bank:hover {
+  background: #ff8800;
+}
+
+/* ==== Footer ==== */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 25px;
+  }
+
+  nav a {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+
+  .contact-card {
+    padding: 25px 20px;
+  }
+
+  .contact-card h2 {
+    font-size: 24px;
+  }
+
+  .btn-whatsapp, .btn-bank {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+}
